@@ -1,0 +1,4 @@
+<% @articles.each do |article| %>
+  <p><%= article.title %></p>
+  <%= link_to("Destroy", [@category, article], method: :delete) %>
+<% end %>
